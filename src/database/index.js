@@ -2,7 +2,11 @@ const { Sequelize } = require("sequelize");
 
 const dbInfo = require("../config/database");
 
+const UserModel = require("../models/User");
+
 const connection = new Sequelize(dbInfo);
+
+UserModel.init(connection);
 
 //"postgres://Arthur:1234@localhost:5432/nex_arthurathayde"
 
