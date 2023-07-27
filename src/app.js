@@ -1,11 +1,19 @@
 const express = require("express");
+const database = require("./database");
+
 const userRoutes = require("./routers/user.routers");
 
 const app = express();
 
-require("./database");
-
 app.use(express.json());
 app.use(userRoutes);
 
-app.listen(3030);
+database
+  .authenticate()
+  .then(() => {
+    console.log("Database connected");
+    app.listen(3030);
+  })
+  .catch((err) => {
+    console.error(err);
+  });

@@ -63,6 +63,7 @@ class User extends Model {
       },
       {
         sequelize,
+        timestamps: false,
       }
     );
   }

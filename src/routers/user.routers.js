@@ -1,14 +1,10 @@
 const { Router } = require("express");
-const UserModel = require("../models/User");
+
+const userController = require("../controller/user.controller");
+const uniqueEmail = require("../middlewares/uniqueEmail.middleware");
 
 const userRouter = Router();
 
-userRouter.post("/register", async (req, res) => {
-  const { name, email, password } = req.body;
-
-  const user = await UserModel.create({ name, email, password });
-
-  res.status(201).json(user);
-});
+userRouter.post("/register", uniqueEmail, userController.createUser);
 
 module.exports = userRouter;
