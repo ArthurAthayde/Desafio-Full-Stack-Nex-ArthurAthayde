@@ -3,12 +3,12 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 const userLoginService = async (email, password) => {
-  const user = UserModel.findOne({ where: email });
+  const user = await UserModel.findOne({ where: { email } });
 
   if (!user) {
     return res.status(401).json({ error: "Invalid credentials." });
   }
-
+  console.log(password, user.password);
   const validatePassword = await bcrypt.compare(password, user.password);
 
   if (!validatePassword) {

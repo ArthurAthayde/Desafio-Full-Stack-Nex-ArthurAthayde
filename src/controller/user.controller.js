@@ -27,4 +27,8 @@ module.exports = {
 
     return res.status(200).json({ token: token });
   },
+
+  async getTest(req, res) {
+    return res.status(200).json({ message: "oi" });
+  },
 };
