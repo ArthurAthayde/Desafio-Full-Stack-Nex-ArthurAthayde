@@ -1,3 +1,4 @@
+require("dotenv");
 const express = require("express");
 const database = require("./database");
 
@@ -12,8 +13,13 @@ database
   .authenticate()
   .then(() => {
     console.log("Database connected");
-    app.listen(3030);
+    const port = process.env.PORT || 3030;
+    app.listen(port, () => {
+      console.log(`Listening to: http://localhost:${port}`);
+    });
   })
   .catch((err) => {
     console.error(err);
   });
+
+module.exports = app;
