@@ -7,6 +7,7 @@ import { Input } from "../../components/Input";
 import { StyledRegisterBtn } from "../../styles/buttons";
 import { useContext } from "react";
 import { UserContext } from "../../providers/UserContext";
+import { Link } from "react-router-dom";
 
 export const LoginPage = () => {
   const {

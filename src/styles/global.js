@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
+import bgimg from "../assets/bgimg.svg";
 
 export const GlobalStyle = createGlobalStyle`
  :root {
@@ -39,7 +40,7 @@ export const BackgroundImage = styled.div`
   width: 100%;
   height: 100%;
 
-  background-image: url("../assets/bgimg.svg");
+  background-image: url(${bgimg});
   background-size: cover;
   opacity: 0.8;
 `;

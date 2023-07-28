@@ -2,14 +2,10 @@ import { useForm } from "react-hook-form";
 import { Input } from "../../components/Input";
 import { schema } from "./schema";
 import { zodResolver } from "@hookform/resolvers/zod";
-import {
-  StyledHeadline,
-  StyledHeadlineSpan,
-  StyledTitleThree,
-} from "../../styles/typography";
-import { StyledFormContainer, StyledRegisterNav } from "./style";
+import { StyledTitleThree } from "../../styles/typography";
+import { StyledFormContainer } from "./style";
 import { useContext } from "react";
-import { StyledRegisterBtn, StyledReturnBtn } from "../../styles/buttons";
+import { StyledRegisterBtn } from "../../styles/buttons";
 import { Link } from "react-router-dom";
 import { UserContext } from "../../providers/UserContext";
 
