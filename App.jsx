@@ -1,10 +1,19 @@
+import { ToastContainer } from "react-toastify";
+import { GlobalStyles } from "./src/styles/GlobalStyles";
+import { RoutesMain } from "./src/routes_front";
+import { BackgroundImage, PageContainer } from "./src/styles/global";
+
 export const App = () => {
   return (
     <div className="App">
-      {/* global styles */}
-      {/* toast */}
+      <PageContainer>
+        <BackgroundImage>
+          <GlobalStyles />
+          <ToastContainer theme="dark" autoClose={3000} />
 
-      {/* routesmain */}
+          <RoutesMain />
+        </BackgroundImage>
+      </PageContainer>
     </div>
   );
 };
