@@ -5,7 +5,7 @@ import bgimg from "../assets/bgimg.svg";
 export const GlobalStyle = createGlobalStyle`
  :root {
      --color-primary: #11111F;
-     --color-emphasis-1: #d5a84a;
+     --color-emphasis-1: #FFAC00;
      --color-emphasis-2: #F8F9FA;
      --color-bg: #343B41;
 

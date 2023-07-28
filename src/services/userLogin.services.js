@@ -8,7 +8,7 @@ const userLoginService = async (email, password) => {
   if (!user) {
     return res.status(401).json({ error: "Invalid credentials." });
   }
-  console.log(password, user.password);
+
   const validatePassword = await bcrypt.compare(password, user.password);
 
   if (!validatePassword) {
