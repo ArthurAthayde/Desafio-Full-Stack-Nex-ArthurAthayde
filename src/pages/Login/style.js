@@ -32,10 +32,10 @@ export const StyledFormLoginContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 35px;
+  }
 
-    p {
-      color: #ff4d4d;
-    }
+  p {
+    color: #ff4d4d;
   }
 
   .returnBtn {

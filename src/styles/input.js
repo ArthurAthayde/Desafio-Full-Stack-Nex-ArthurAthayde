@@ -16,8 +16,4 @@ export const StyledInput = styled.input`
   background-color: var(--grey-2);
 
   padding: 0px 16px;
-
-  ::placeholder {
-    color: var(--grey-3);
-  }
 `;
