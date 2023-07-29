@@ -8,9 +8,11 @@ import { ProductList } from "./data";
 import { StyledTitleTwo } from "../../styles/typography";
 import { useContext } from "react";
 import { UserContext } from "../../providers/UserContext";
+import { useNavigate } from "react-router-dom";
 
 export const DashboardPage = () => {
-  const { user } = useContext(UserContext);
+  const { user, setUser } = useContext(UserContext);
+  const navigate = useNavigate();
 
   return (
     <>
