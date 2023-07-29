@@ -1,13 +1,17 @@
 import { useForm } from "react-hook-form";
 import { schema } from "./schema";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { StyledFormContainer } from "../Register/style";
 import { StyledTitleThree } from "../../styles/typography";
 import { Input } from "../../components/Input";
 import { StyledRegisterBtn } from "../../styles/buttons";
 import { useContext } from "react";
 import { UserContext } from "../../providers/UserContext";
 import { Link } from "react-router-dom";
+import {
+  StyledFormLoginContainer,
+  StyledLoginPageContainer,
+  StyledSlogan,
+} from "./style";
 
 export const LoginPage = () => {
   const {
@@ -23,8 +27,8 @@ export const LoginPage = () => {
   };
 
   return (
-    <>
-      <StyledFormContainer>
+    <StyledLoginPageContainer>
+      <StyledFormLoginContainer>
         <StyledTitleThree>Login</StyledTitleThree>
         <form
           onSubmit={handleSubmit((data) => {
@@ -55,7 +59,10 @@ export const LoginPage = () => {
             Criar conta
           </Link>
         </form>
-      </StyledFormContainer>
-    </>
+      </StyledFormLoginContainer>
+      <StyledSlogan>
+        O marketplace que você precisa, a <span>um</span> passo.
+      </StyledSlogan>
+    </StyledLoginPageContainer>
   );
 };

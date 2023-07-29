@@ -38,7 +38,7 @@ export const StyledTitleThree = styled.h3`
 
 export const StyledHeadline = styled.label`
   font-weight: 400;
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: var(--grey-0);
 `;
 

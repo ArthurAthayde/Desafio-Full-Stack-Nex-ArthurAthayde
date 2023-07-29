@@ -3,7 +3,11 @@ import { Input } from "../../components/Input";
 import { schema } from "./schema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { StyledTitleThree } from "../../styles/typography";
-import { StyledFormContainer } from "./style";
+import {
+  StyledFormRegisterContainer,
+  StyledRegisterPageContainer,
+  StyledSlogan,
+} from "./style";
 import { useContext } from "react";
 import { StyledRegisterBtn } from "../../styles/buttons";
 import { Link } from "react-router-dom";
@@ -19,8 +23,11 @@ export const RegisterPage = () => {
   const { handleRegister } = useContext(UserContext);
 
   return (
-    <>
-      <StyledFormContainer>
+    <StyledRegisterPageContainer>
+      <StyledSlogan>
+        O marketplace que você precisa, a <span>um</span> passo.
+      </StyledSlogan>
+      <StyledFormRegisterContainer>
         <StyledTitleThree>Cadastre-se</StyledTitleThree>
         <form onSubmit={handleSubmit(handleRegister)}>
           <Input
@@ -52,7 +59,7 @@ export const RegisterPage = () => {
             Voltar para o login
           </Link>
         </form>
-      </StyledFormContainer>
-    </>
+      </StyledFormRegisterContainer>
+    </StyledRegisterPageContainer>
   );
 };

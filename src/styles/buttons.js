@@ -5,7 +5,7 @@ export const StyledRegisterBtn = styled.button`
   align-items: center;
   justify-content: center;
 
-  min-height: 48px;
+  min-height: 38px;
   width: 100%;
 
   border: solid 1px var(--grey-3);

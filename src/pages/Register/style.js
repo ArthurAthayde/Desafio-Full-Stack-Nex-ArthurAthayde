@@ -1,9 +1,18 @@
 import styled from "styled-components";
 
-export const StyledFormContainer = styled.div`
+export const StyledRegisterPageContainer = styled.div`
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 8% 12%;
+`;
+
+export const StyledFormRegisterContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 16px;
 
   background-color: var(--color-bg);
 
@@ -13,8 +22,21 @@ export const StyledFormContainer = styled.div`
 
   border-radius: 4px;
 
-  padding: 44px 24px;
-  margin: 0 auto;
+  padding: 28px 24px;
+
+  h3 {
+    align-self: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    p {
+      color: #ff4d4d;
+    }
+  }
 
   .returnBtn {
     display: inline-flex;
@@ -34,5 +56,25 @@ export const StyledFormContainer = styled.div`
     color: var(--grey-0);
 
     background-color: transparent;
+  }
+`;
+
+export const StyledSlogan = styled.p`
+  display: none;
+
+  max-height: 177px;
+  max-width: 440px;
+
+  text-align: center;
+  align-self: center;
+
+  font-size: 2.5rem;
+  color: var(--color-emphasis-1);
+
+  span {
+    color: var(--color-emphasis-2);
+  }
+  @media (min-width: 769px) {
+    display: block;
   }
 `;
