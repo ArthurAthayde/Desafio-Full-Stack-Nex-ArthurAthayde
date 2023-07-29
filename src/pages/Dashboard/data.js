@@ -2,51 +2,51 @@ export const ProductList = [
   {
     id: "1",
     name: "Teclado",
-    description: "Teclado branco para computadores Desktop",
+    price: 18.0,
   },
   {
     id: "2",
     name: "Mouse",
-    description: "Mouse óptico para jogos",
+    price: 10.0,
   },
   {
     id: "3",
     name: "Monitor",
-    description: "Monitor LED Full HD de 24 polegadas",
+    price: 160.0,
   },
   {
     id: "4",
     name: "Headset",
-    description: "Headset com cancelamento de ruído",
+    price: 25.99,
   },
   {
     id: "5",
     name: "Impressora",
-    description: "Impressora a jato de tinta colorida",
+    price: 59.99,
   },
   {
     id: "6",
     name: "Webcam",
-    description: "Webcam de alta definição para videochamadas",
+    price: 17.99,
   },
   {
     id: "7",
     name: "Caixas de som",
-    description: "Caixas de som estéreo com Bluetooth",
+    price: 39.99,
   },
   {
     id: "8",
     name: "Mesa para computador",
-    description: "Mesa ergonômica para computador",
+    price: 60.0,
   },
   {
     id: "9",
     name: "Mousepad",
-    description: "Mousepad gamer com superfície de tecido",
+    price: 5.99,
   },
   {
     id: "10",
     name: "Notebook",
-    description: "Notebook com processador i7 e placa de vídeo dedicada",
+    price: 659.99,
   },
 ];

@@ -1,12 +1,19 @@
 import { styled } from "styled-components";
 
 export const StyledProductsContainer = styled.div`
-  height: 750px;
-  width: 600px;
+  width: 90%;
+  max-width: 600px;
 
   margin: 50px auto;
 
   background-color: var(--color-bg);
+
+  h2 {
+    align-self: center;
+    text-align: center;
+
+    padding-top: 20px;
+  }
 `;
 
 export const StyledProductsList = styled.ul`
@@ -18,14 +25,14 @@ export const StyledProductsList = styled.ul`
   background-color: transparent;
 
   margin: 0 auto;
-  padding: 22px 15px 22px 15px;
+  padding: 30px 0px;
 
   text-align: center;
 `;
 
 export const StyledProductItem = styled.li`
-  height: 50px;
-  width: 95%;
+  height: 40px;
+  width: 100%;
 
   display: flex;
   justify-content: space-between;
@@ -33,7 +40,7 @@ export const StyledProductItem = styled.li`
   gap: 16px;
   margin: 0 auto;
 
-  background-color: var(--grey-4);
+  background-color: var(--grey-2);
 
   border-radius: 4px;
   padding: 12px;

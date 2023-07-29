@@ -10,7 +10,7 @@ export const App = () => {
       <PageContainer>
         <BackgroundImage>
           <GlobalStyles />
-          <ToastContainer theme="light" autoClose={3000} />
+          <ToastContainer theme="dark" autoClose={3000} />
 
           <RoutesMain />
         </BackgroundImage>
